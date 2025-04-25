@@ -12,12 +12,6 @@ load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-required_vars = ["GEMINI_API_KEY"]
-missing_vars = [var for var in required_vars if not os.environ.get(var)]
-if missing_vars:
-    logger.error(f"Missing required environment variables: {', '.join(missing_vars)}")
-    sys.exit(1)
-
 class ImageAnalyzer:
     @staticmethod
     def extract_text_from_image(image_data: bytes) -> str:

@@ -69,7 +69,7 @@ signal.signal(signal.SIGTERM, signal_handler)
 load_dotenv()
 
 # Verify environment variables
-required_vars = ["SLACK_BOT_TOKEN", "SLACK_APP_TOKEN", "SLACK_SIGNING_SECRET", "OPENAI_API_KEY", "ERASER_API_TOKEN"]
+required_vars = ["SLACK_BOT_TOKEN", "SLACK_APP_TOKEN", "SLACK_SIGNING_SECRET", "OPENAI_API_KEY", "ERASER_API_TOKEN", "GEMINI_API_KEY"]
 missing_vars = [var for var in required_vars if not os.environ.get(var)]
 if missing_vars:
     logger.error(f"Missing required environment variables: {', '.join(missing_vars)}")
