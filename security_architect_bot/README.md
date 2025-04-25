@@ -21,7 +21,13 @@ Created by Deriv Security Team
 - Generation of secure architecture diagrams using Eraser.io
 - Real-time Slack interaction with thread support
 
+## Demo
+
+![SecArchBot Demo](SecArchBot3.1.gif)
+
 ## Architecture
+
+![SecArchBot Architecture](secarchbot_arch.png)
 
 SecArchBot is built with a modular architecture that integrates multiple AI services:
 
@@ -82,8 +88,8 @@ SecArchBot is built with a modular architecture that integrates multiple AI serv
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/secarchbot.git
-cd secarchbot
+git clone https://github.com/deriv-com/security-tools.git
+cd security_architect_bot
 ```
 
 2. Create and activate a virtual environment:
@@ -225,8 +231,9 @@ docker-compose logs -f
 
 Example:
 ```
-@SecArchBot The payment automation team wants to set up an SFTP server for our main bank through which they can download payment instructions. The idea is to use cloudflared and an sftp docker container on the existing payroll server.
+@SecArchBot A team requires a secure method to exchange sensitive files with an external partner. They are considering setting up an SFTP server, utilizing AWS and a tunnel.
 ```
+
 
 ## Troubleshooting
 
