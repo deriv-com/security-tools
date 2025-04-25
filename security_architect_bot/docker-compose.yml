@@ -1,0 +1,12 @@
+services:
+  sec_arch_bot:
+    build: .  # Builds the image from the current directory's Dockerfile
+    volumes:
+      - ./logs:/app/logs
+    image: sec_arch_bot_image
+    container_name: sec_arch_bot_container
+    restart: always  # Automatically restart the container if it stops
+    env_file:
+      - .env  # Load environment variables from the .env file
+    ports:
+      - "3000:3000"  # Map host port 3000 to container port 3000 (adjust as needed)
